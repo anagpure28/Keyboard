@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <style>
+        body{
+            background-image: linear-gradient(315deg,#B721FF 30%, rgba(231,76,228,1) 80%);
+            /* background: linear-gradient(142deg, rgba(231,76,186,1) 0%, rgba(85,244,183,1) 100%); */
+            /* background: linear-gradient(142deg, rgba(231,76,228,1) 0%, rgba(92,85,244,1) 100%); */
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .keyboard{
+            width: 90%;
+            height: 100%;
+            margin: auto;
+            margin-top: 14%;
+            border-radius: 10px;
+            background-color: black;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(5,50px);
+            gap: 8px 8px;
+            padding: 20px;
+        }
+        #space{
+            grid-column-start: 5;
+            grid-column-end: 9;
+        }
+        #shift,#enter{
+            grid-column-start: 11;
+            grid-column-end: 13;
+        }
+        .keyboard > button{
+            font-size: 16px;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            border-radius: 8px;
+            background: linear-gradient(142deg, rgba(231,76,228,1) 0%, rgba(92,85,244,1) 100%);;
+            color: rgb(23, 218, 218);
+        }
+        button:hover{
+            background-color:  rgb(23, 218, 218);
+            color:  #19191ea7;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="keyboard">
+        <button>~</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>0</button>
+        <button>Delete</button>
+        <button>Tab</button>
+        <button>Q</button>
+        <button>W</button>
+        <button>E</button>
+        <button>R</button>
+        <button>T</button>
+        <button>Y</button>
+        <button>U</button>
+        <button>I</button>
+        <button>O</button>
+        <button>P</button>
+        <button>\</button>
+        <button>Caps</button>
+        <button>A</button>
+        <button>S</button>
+        <button>D</button>
+        <button>F</button>
+        <button>G</button>
+        <button>H</button>
+        <button>J</button>
+        <button>K</button>
+        <button>L</button>
+        <button id="enter">Enter</button>
+        <button>Shift</button>
+        <button>Z</button>
+        <button>X</button>
+        <button>C</button>
+        <button>V</button>
+        <button>B</button>
+        <button>N</button>
+        <button>M</button>
+        <button><</button>
+        <button>></button>
+        <button id="shift">Shift</button>
+        <button><span class="material-symbols-outlined">
+            language
+            </span></button>
+        <button>control</button>
+        <button>option</button>
+        <button>alt</button>
+        <button id="space">Space</button>
+        <button>alt</button>
+        <button>option</button>
+        <button><span class="material-symbols-outlined">
+            west
+            </span></button>
+        <button><span class="material-symbols-outlined">
+            east
+            </span></button>
+    </div>
+</body>
+</html>
